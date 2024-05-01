@@ -89,13 +89,13 @@ Sub stock_loop():
     
     ' Add functionality to your script to return the Greatest % Increase, Decrease, and Total
     increase_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("K2:K" & RowCount)), ws.Range("K2:K" & RowCount), 0)
-    ws.Cells(2, 15).Value = ws.Cells(increase_number + 1, 1)
+    ws.Cells(2, 15).Value = ws.Cells(increase_number + 1, 9)
     
     decrease_number = WorksheetFunction.Match(WorksheetFunction.Min(ws.Range("K2:K" & RowCount)), ws.Range("K2:K" & RowCount), 0)
-    ws.Cells(3, 15).Value = ws.Cells(decrease_number + 1, 1)
+    ws.Cells(3, 15).Value = ws.Cells(decrease_number + 1, 9)
     
     total_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("L2:L" & RowCount)), ws.Range("L2:L" & RowCount), 0)
-    ws.Cells(4, 15).Value = ws.Cells(total_number + 1, 1)
+    ws.Cells(4, 15).Value = ws.Cells(total_number + 1, 9)
     
     ws.Cells(2, 16).Value = Application.WorksheetFunction.Max(ws.Range("K2:K93001"))
     ws.Cells(3, 16).Value = Application.WorksheetFunction.Min(ws.Range("K2:K93001"))
