@@ -1,3 +1,12 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+END
+Attribute VB_Name = "Sheet1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
 Sub stock_loop():
 
     Dim i As Long ' row number
@@ -104,3 +113,19 @@ Sub stock_loop():
     Next ws
 
 End Sub
+
+
+
+
+
+' Here is a summary of what the code does:
+
+' It initializes variables for row numbers, volume, ticker, changes, and leaderboard rows.
+' It loops through each row of data on each worksheet.
+' It calculates quarterly change, percent change, and total stock volume for each stock ticker.
+' It outputs the calculations to the respective columns on the worksheet.
+' It colors the quarterly change output based on whether it is positive, negative, or zero.
+' It formats the percentage change column to display values as percentages.
+' It auto-fits columns I to L for better visibility.
+' It identifies the stock with the greatest percentage increase, decrease, and total volume.
+' It outputs these values along with the maximum and minimum percentage changes to the worksheet.
